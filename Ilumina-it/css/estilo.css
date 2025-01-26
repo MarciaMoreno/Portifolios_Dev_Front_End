@@ -1,0 +1,211 @@
+
+/****http://www.ilumina-it.com.br  ***REVISÃO = 17/05/2019 sexta-feira 23h19min***
+	Formato CSS: estilo_ilumina - PÁGINA: index.html - Nazaré do Piauí / 24/01/2025*/
+		
+	/****FONTES DO GOOGLE***********/
+	@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+	/*
+
+	/*FORMATANDO O BODY************/
+	body{ background-color: black; font-family: "Ubuntu", serif; color:#fcfbf6; }
+	a {text-decoration: none;}
+	ul li{ text-decoration: none; list-style: none;}
+	header{ flex-wrap: wrap;}
+	.logo-site strong{		
+		font-family: "Great Vibes", serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 10rem;
+	}
+	.logo-site h1 { font-size: 5rem; text-align: center; text-shadow: 0 0 10px #e6d996, 0 0 40px #fcfbf6, 0 0 80px #f3df8e;}
+	.logo-site{
+		color: #f3df8e;
+		width: 100%;
+		justify-items: center;
+		align-content: center;
+		font-size: 2rem;
+		background-image: url("../Objetos/teste2.jpg");	
+		background-repeat: repeat-x;
+		background-position: bottom;
+		background-size: fill;
+		margin: auto;
+	}
+	.menu{  margin: auto; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; }
+	.menu ul li{ display: inline-block; }
+	.menu input{
+		font-size: 1rem;
+		color: #f3df8e;
+		width: 250px;
+		padding: 4%;
+		border-bottom-width: 12px;
+		border-bottom-color: #f3df8e;
+		background-color: transparent;
+		box-shadow: inset 3px 9px 19px rgba(255, 215, 0,0.5) ;
+		border-radius: 22%;
+		margin: 2%;
+	}
+	.linha-anuncio{
+		flex-wrap: wrap;
+		height: 300px;
+		width: 95%;
+		box-shadow: groove 3px 9px 19px rgba(255, 215, 0,0.5) ;
+		border: groove 2px #f3df8e;
+		margin: auto;
+	}
+	
+	.menu input:hover{ background-color: #f3df8e; color: #000;}
+	.social{ margin: auto; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; } 
+	.social ul li{ display: inline-block; }
+	.social img{ width: 70px; }	 
+	.social img:hover{  box-shadow: 0 2px 12px 4px #f3df8e;	}
+	section{
+		display: flex; margin: 5%;
+		border: 1px inset black;
+	}
+	section:hover{ border: 1px inset #f3df8e ; box-shadow: 2px 14px 24px #f3df8e;}
+	.title-index h3{ color: #f3df8e; font-family: "Ubuntu", serif; font-weight: 300; font-style: normal; }
+	.title-index{
+		text-align: center;
+		width: 100%;
+		justify-items: center;
+		align-content: center;
+		font-size: 2rem;
+		background-image: url("../Objetos/teste2.jpg");	
+		background-repeat: repeat-x;
+		background-position: bottom;
+		padding: 5%;
+		background-size: fill;
+		margin-left: 2%;
+		
+	}
+	#box-img{ 
+		width: 200px; 
+		height: 100%; 
+		object-fit: fill; 
+		object-position: bottom;
+		border: groove 4px #f3df8e;
+	}
+	.box-img{
+		max-width: 200px;
+		height: 250px;
+		box-sizing: content-box;
+	}
+	main article{
+		padding: 0% 20% 0% 20%;
+		font-size: 1.2rem;
+		text-align: justify;
+		font-weight: 200;
+	}
+	footer h2{
+		flex-wrap: wrap;
+		color: #f3df8e;
+		font-weight: 100;
+		text-align: center;
+		padding: 5%;
+	}
+
+	.main-contato{
+		font-weight: 200;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.parte-01, .parte-02{
+		padding: 5%;
+		max-width: 50%;
+		
+	}
+	.parte-01 input{
+		font-size: 1rem;
+		color: #f3df8e;
+		width: 250px;
+		padding: 4%;
+		border-bottom-width: 12px;
+		border-bottom-color: #f3df8e;
+		background-color: transparent;
+		box-shadow: 3px 9px 19px rgba(255, 215, 0,0.5) ;
+		border-radius: 22%;
+		margin: 2%;
+	}
+	.parte-01 textarea{
+		font-size: 1rem;
+		color: #f3df8e;
+		width: 250px;
+		padding: 4%;
+		border-bottom-width: 12px;
+		border-bottom-color: #f3df8e;
+		background-color: transparent;
+		box-shadow: 3px 9px 19px rgba(255, 215, 0,0.5) ;
+		border-radius: 12%;
+		margin: 2%;
+	}
+	.parte-01 button{
+		font-size: 1rem;
+		color: #f3df8e;
+		width: 100px;
+		padding: 4%;
+		border-bottom-width: 12px;
+		border-bottom-color: #f3df8e;
+		background-color: transparent;
+		box-shadow: 3px 9px 19px rgba(255, 215, 0,0.5) ;
+		border-radius: 12%;
+		margin: 3%;
+	}
+	h1,h2,h3{ color: #f3df8e;}
+	.main-contato span{
+		font-weight: 600;
+		padding: 5%;
+		font-family: "Great Vibes", serif;
+		font-size: 2.2rem;
+		text-align: center;
+		justify-items: center;
+		color: #f3df8e;
+	}
+	#box-mensagem{
+		max-width: 80%;
+		height: 200px;
+	}
+	.grade{
+		display: flex;
+		justify-content: center;
+		justify-items: center;
+		flex-wrap: wrap;
+		
+	}
+	.grade figure{
+		max-width: 250px;
+		height:310px;
+		border: groove 1px #f3df8e;
+		justify-items: center;
+	}
+	.grade figure:hover{
+		box-shadow: 3px 9px 119px rgba(255, 215, 0,0.5) ;
+	}
+	.grade img{ width: 100%; height: 100%; margin: auto; object-fit: cover; }
+	
+	.grade figcaption{
+		text-align: center;
+		flex-wrap: wrap;
+		color: #f3df8e;
+		font-weight: 200;
+		white-space: pre-wrap;
+	}
+
+	.titulo{
+		text-align: center;
+		color: #0c0c0b;
+		width: 100%;
+		font-size: 2rem;
+		background-image: url("../Objetos/teste2.jpg");	
+		background-repeat: repeat-x;
+		background-position: bottom;
+		background-size: fill;
+		margin: auto;
+		justify-items: end;
+		padding: 2%;
+		text-shadow: 0 0 10px #fcfbf6, 0 0 20px #fcfbf6, 0 0 30px #f3df8e;
+	}
