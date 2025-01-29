@@ -88,13 +88,13 @@ body{
 .encarte1 img, .encarte2 img{  width: 100%; }
 .encarte1 ul li, .encarte2 ul li{ display: inline-block; align-items: center;}
 .slogan-site{
+     height: 200px;
      box-sizing: content-box;
-     display: flex;
-     margin: auto;
-     max-width: 100%;
-     height: auto;
-     object-fit: cover;
-     object-position: center;
+     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+     background-image: url("../objeto/tito_pagina.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
 }
 .menu{
      display: flex; justify-content: center; flex-wrap: wrap; text-align: center;      
