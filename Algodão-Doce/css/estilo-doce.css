@@ -45,3 +45,112 @@
 */
      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/****Página INDEX**************************************/
+/**********************************************************/
+html {
+     --s: 30px; /* control the size*/
+     --c1: #e5fcc2;
+     --c2: #45ada8;
+     
+     --_s:37.5% 12.5% at 62.5%;
+     --_g:34% 99%,#0000 101%;
+     --g1:radial-gradient(var(--_s) 100%,#0000 32%,var(--c1) var(--_g));
+     --g2:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c1) var(--_g));
+     --g3:radial-gradient(var(--_s) 100%,#0000 32%,var(--c2) var(--_g));
+     --g4:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c2) var(--_g));
+     background:
+       var(--g1),
+       var(--g2) 0                calc(3*var(--s)),
+       var(--g3) var(--s)         calc(3*var(--s)),
+       var(--g4) var(--s)         calc(6*var(--s)),
+       var(--g1) calc(2*var(--s)) calc(6*var(--s)),
+       var(--g2) calc(2*var(--s)) calc(9*var(--s)),
+       var(--g3) calc(3*var(--s)) calc(9*var(--s)),
+       var(--g4) calc(3*var(--s)) 0,
+       repeating-linear-gradient(var(--c1) 0 25%,var(--c2) 0 50%);
+     background-size: calc(4*var(--s)) calc(12*var(--s));
+   }
+
+body{
+     max-width: 100%; display: flex; flex-wrap: wrap; justify-content: center;
+     background-attachment: fixed;
+}
+
+.encarte1, .encarte2{
+     max-width: 45%;  min-width: 450px; margin: 5% 0% 5% 2%; padding: 1%; height: auto;
+     flex-wrap: wrap; box-sizing: content-box; opacity: 0.9; 
+     background-color: #ededd7;
+     border: 2px solid #3d3838;     
+     
+     /*background-size: 400% 400%;
+     animation: gradiente 6s ease infinite alternate;*/
+}
+.encarte1 img, .encarte2 img{  width: 100%; }
+.encarte1 ul li, .encarte2 ul li{ display: inline-block; align-items: center;}
+.slogan-site{
+     box-sizing: content-box;
+     display: flex;
+     margin: auto;
+     max-width: 100%;
+     height: auto;
+     object-fit: cover;
+     object-position: center;
+}
+.menu{
+     display: flex; justify-content: center; flex-wrap: wrap; text-align: center;      
+}
+[type=button]{
+     text-align: center; padding: 15px; margin: 10px; color: #443736;
+     font-weight: 100;  font-size: 1.2rem;
+     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+     border: dashed 4px #e6c2e0; border-radius: 20% 30% 5%;     
+ }
+ [type=button]:hover{
+     border: dashed 4px #e323c3; border-radius: 20% 30% 5%; 
+     box-shadow: 0 10px 25px #756672;
+ }
+ .social{ display: flex; justify-content: center;}
+.social img{
+     width: 60px;  height: 60px; border: groove 4px #4a354dae;
+     border-radius: 20% 30% 5%; box-shadow:  4px 4px 1px #443736;
+     filter: drop-shadow( 2px 4px 8px #443736);
+}
+.social img:hover{
+     border: dashed 4px #e323c3; border-radius: 20% 30% 5%; 
+}
+.grade{ 
+     display: flex;  justify-content: center;  justify-items: center; 
+     flex-wrap: wrap; margin-top: 5%;
+}
+.grade figure{
+     margin: 2%;  text-align: center;  padding: 3%; width: 150px; border-radius: 14%;
+     border: 2px solid #ccc;  box-sizing: content-box;      
+     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+}
+.grade figure figcaption h2{ 
+     border-radius: 20% 30% 5%; background-color: #eacae6; padding: 3%;
+     font-size: 1.2rem;
+}
+.grade figure img{
+     width: 120px;
+     height: 150px;
+     border-radius: 40%;
+     object-fit: cover;
+     object-position: center;
+ }
+ .grade figure:hover{
+     border: dashed 2px #e323c3;
+     box-shadow: 0 10px 25px #756672;
+ }
+
+ footer{
+     width: 100%;
+     font-size: 1.5rem;
+     margin-top: 5%;
+     padding: 2% 0% 5% 0%;
+     text-align: center;
+     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+
+ }
+
+ 
