@@ -24,7 +24,7 @@
           display: block;
      }
      body { line-height: 1; }
-     ol, ul , li{ list-style: none;}
+     ol, ul { list-style: none;}
      blockquote, q { quotes: none; }
      blockquote:before, blockquote:after,
      q:before, q:after {
@@ -47,110 +47,153 @@
 
 /****Página INDEX**************************************/
 /**********************************************************/
-html {
-     --s: 30px; /* control the size*/
-     --c1: #e5fcc2;
-     --c2: #45ada8;
-     
-     --_s:37.5% 12.5% at 62.5%;
-     --_g:34% 99%,#0000 101%;
-     --g1:radial-gradient(var(--_s) 100%,#0000 32%,var(--c1) var(--_g));
-     --g2:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c1) var(--_g));
-     --g3:radial-gradient(var(--_s) 100%,#0000 32%,var(--c2) var(--_g));
-     --g4:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c2) var(--_g));
-     background:
-       var(--g1),
-       var(--g2) 0                calc(3*var(--s)),
-       var(--g3) var(--s)         calc(3*var(--s)),
-       var(--g4) var(--s)         calc(6*var(--s)),
-       var(--g1) calc(2*var(--s)) calc(6*var(--s)),
-       var(--g2) calc(2*var(--s)) calc(9*var(--s)),
-       var(--g3) calc(3*var(--s)) calc(9*var(--s)),
-       var(--g4) calc(3*var(--s)) 0,
-       repeating-linear-gradient(var(--c1) 0 25%,var(--c2) 0 50%);
-     background-size: calc(4*var(--s)) calc(12*var(--s));
-   }
+     html {
+          --s: 30px; /* control the size*/
+          --c1: #e5fcc2;
+          --c2: #45ada8;
+          
+          --_s:37.5% 12.5% at 62.5%;
+          --_g:34% 99%,#0000 101%;
+          --g1:radial-gradient(var(--_s) 100%,#0000 32%,var(--c1) var(--_g));
+          --g2:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c1) var(--_g));
+          --g3:radial-gradient(var(--_s) 100%,#0000 32%,var(--c2) var(--_g));
+          --g4:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c2) var(--_g));
+          background:
+          var(--g1),
+          var(--g2) 0                calc(3*var(--s)),
+          var(--g3) var(--s)         calc(3*var(--s)),
+          var(--g4) var(--s)         calc(6*var(--s)),
+          var(--g1) calc(2*var(--s)) calc(6*var(--s)),
+          var(--g2) calc(2*var(--s)) calc(9*var(--s)),
+          var(--g3) calc(3*var(--s)) calc(9*var(--s)),
+          var(--g4) calc(3*var(--s)) 0,
+          repeating-linear-gradient(var(--c1) 0 25%,var(--c2) 0 50%);
+          background-size: calc(4*var(--s)) calc(12*var(--s));          
+     }
+     body{
+          max-width: 100%; display: flex; flex-wrap: wrap; 
+          justify-content: center; font-family: "Quicksand", serif; 
+          /*background-size: 400% 400%;
+          animation: gradiente 6s ease infinite alternate;*/
+     }
 
-body{
-     max-width: 100%; display: flex; flex-wrap: wrap; justify-content: center;
-     background-attachment: fixed;
-}
+     /**** Separando as divs como encartes....*/
+     .encarte1 img, .encarte2 img{  width: 100%; }
+     .encarte1 ul li, .encarte2 ul li{ 
+          display: inline; margin: 0; padding: 0;
+     }
+     .encarte1, .encarte2{
+          max-width: 45%;  min-width: 450px; margin: 2% 0% 1% 2%; height: auto;
+          flex-wrap: wrap; opacity: 0.9; 
+          background-color: #ededd7;
+          border: 2px solid #3d3838;     
+          
+          /*background-size: 400% 400%;
+          animation: gradiente 6s ease infinite alternate;*/
+     }
+     .grade article{ display: block;}
+     .grade article span{
+          font-size: large; font-size: 1.5rem; font-style: italic; padding: 3%; color: #f9eef7;     
+          background: linear-gradient(-45deg, #7d6c79 0%, #398380 50%, hsl(266, 57%, 61%) 100%);
 
-.encarte1, .encarte2{
-     max-width: 45%;  min-width: 450px; margin: 5% 0% 5% 2%; padding: 1%; height: auto;
-     flex-wrap: wrap; box-sizing: content-box; opacity: 0.9; 
-     background-color: #ededd7;
-     border: 2px solid #3d3838;     
-     
-     /*background-size: 400% 400%;
-     animation: gradiente 6s ease infinite alternate;*/
-}
-.encarte1 img, .encarte2 img{  width: 100%; }
-.encarte1 ul li, .encarte2 ul li{ display: inline-block; align-items: center;}
-.slogan-site{
-     height: 200px;
-     box-sizing: content-box;
-     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
-     background-image: url("../objeto/tito_pagina.png");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-}
-.menu{
-     display: flex; justify-content: center; flex-wrap: wrap; text-align: center;      
-}
-[type=button]{
-     text-align: center; padding: 15px; margin: 10px; color: #443736;
-     font-weight: 100;  font-size: 1.2rem;
-     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
-     border: dashed 4px #e6c2e0; border-radius: 20% 30% 5%;     
- }
- [type=button]:hover{
-     border: dashed 4px #e323c3; border-radius: 20% 30% 5%; 
-     box-shadow: 0 10px 25px #756672;
- }
- .social{ display: flex; justify-content: center;}
-.social img{
-     width: 60px;  height: 60px; border: groove 4px #4a354dae;
-     border-radius: 20% 30% 5%; box-shadow:  4px 4px 1px #443736;
-     filter: drop-shadow( 2px 4px 8px #443736);
-}
-.social img:hover{
-     border: dashed 4px #e323c3; border-radius: 20% 30% 5%; 
-}
-.grade{ 
-     display: flex;  justify-content: center;  justify-items: center; 
-     flex-wrap: wrap; margin-top: 5%;
-}
-.grade figure{
-     margin: 2%;  text-align: center;  padding: 3%; width: 150px; border-radius: 14%;
-     border: 2px solid #ccc;  box-sizing: content-box;      
-     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
-}
-.grade figure figcaption h2{ 
-     border-radius: 20% 30% 5%; background-color: #eacae6; padding: 3%;
-     font-size: 1.2rem;
-}
-.grade figure img{
-     width: 120px;
-     height: 150px;
-     border-radius: 40%;
-     object-fit: cover;
-     object-position: center;
- }
- .grade figure:hover{
-     border: dashed 2px #e323c3;
-     box-shadow: 0 10px 25px #756672;
- }
+     }
 
- footer{
-     width: 100%;
-     font-size: 1.5rem;
-     margin-top: 5%;
-     padding: 2% 0% 5% 0%;
-     text-align: center;
-     background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+     /**Estilizando HEADER*****************************/
+     .encarte1 h1{
+          font-family: "Quicksand", serif;
+          font-size: 2.1rem;
+          padding: 2%;
+          font-weight: 900;
+          color: #6f576b;
+          font-style: italic;
+          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
 
- }
+     }
+     .slogan-site{ 
+          width: 100%; height: auto; margin: auto;   
+     }
+     .slogan-site img{ 
+          max-width: 100%; object-fit: fill; object-position: center;
+     }
+     .menu{ 
+          display: flex; justify-content: center; align-items: center;
+          text-align: center;
+     }
+     .menu a{
+          text-decoration: none;
+          text-align: center; padding: 10px 10px 10px 10px;line-height: 3em;
+          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+          border: dashed 4px #e6c2e0; font-size: 1.5rem;  color: #3d3838;
+      }
+      .menu a:hover{
+          border: dashed 4px #e323c3; box-shadow: 0 10px 25px #756672;
+      }
 
- 
+      .foto-encarte{
+          width: 100%;
+          height: auto;
+          box-sizing: content-box;          
+      }
+      .foto-encarte img{
+          max-width: 100%;
+          object-position: center;
+      }
+
+     /**Estilizando o banner do sidebar****/
+     #id{
+          width: 100%;
+          max-height: auto;
+          align-items: center;
+          margin: auto;
+     }
+
+     /*****Estilizando o encarte 1 e 2**********/
+     .social{ display: flex; justify-content: center;}
+     .social img{
+          width: 60px;  height: 60px; border: dashed 4px #e6c2e0;
+          border-radius: 5%; box-shadow:  4px 4px 1px #443736;
+          filter: drop-shadow( 2px 4px 8px #443736);
+     }
+     .social img:hover{
+          border: dashed 4px #e323c3; border-radius: 20% 30% 5%; 
+     }
+     .encarte2 .grade{ margin-top: 165px;}
+     .grade{ 
+          display: flex;  justify-content: center;  justify-items: center; 
+          flex-wrap: wrap; margin-top: 5%;
+     }
+     .grade figure{
+          margin: 2%;  text-align: center;  padding: 3%; width: 150px; border-radius: 14%;
+          border: 2px solid #ccc;  box-sizing: content-box;      
+          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+     }
+     .grade figure figcaption h2{ 
+          border-radius: 5%; background-color: #eacae6; padding: 3%;
+          font-size: 1.2rem; border: dashed 4px #6f576b;
+     }
+     .grade figure img{
+          width: 120px;
+          height: 150px;
+          border-radius: 40%;
+          object-fit: cover;
+          object-position: center;
+      }
+      .grade figure:hover{
+          border: dashed 2px #e323c3;
+          box-shadow: 0 10px 25px #756672;
+      }
+
+     /***FOOOTER*************************************************/
+     /***********************************************************/
+     footer{
+          width: 100%;
+          font-size: 1.5rem;
+          margin-top: 5%;
+          padding: 2% 0% 5% 0%;
+          text-align: center;
+          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+      }
+     footer h2{
+          background-color: #f4cceb;
+          padding: 1%;
+     }

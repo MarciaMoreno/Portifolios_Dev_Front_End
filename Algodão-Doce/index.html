@@ -8,20 +8,44 @@
      </head>
      <body>
           <div class="slogan-site">
-               
+               <img src="./objeto/tito_pagina.png" alt="Slogan da página">
           </div>
           <div class="encarte1">
                <header>                    
                     <nav class="menu">
                          <ul>
-                              <li><a href=""><input type="button" name="OneButton" value="Cardápio"></a></li>
-                              <li><a href=""><input type="button" name="OneButton" value="Datas Comemorativas"></a></li>
-                              <li><a href=""><input type="button" name="OneButton" value="Encomendas & Contatos"></a></li>
-                              <li><a href=""><input type="button" name="OneButton" value="Sobre Nós"></a></li>
+                              <li><a href="cardapio-cupcake.html">Cardápio |</a></li>
+                              <li><a href="">Datas Comemorativas |</a></li>
+                              <li><a href="">Encomendas & Contatos |</a></li>
+                              <li><a href="">Sobre Nós</a></li>
                          </ul>
                     </nav>
                </header>     
                <main>
+                    <br><br><br>
+                    <div class="banner">
+                         <aside>
+                              <script type="text/javascript">
+                                   function slide1(){
+                                        document.getElementById('id').src="./banner/baner_vazio.jpeg";
+                                        setTimeout("slide2()", 5000)
+                                        document.getElementById('Aid').href="#";
+                                   } function slide2(){
+                                        document.getElementById('id').src="./banner/baner_vazio2.jpg";
+                                        setTimeout("slide3()", 5000)
+                                        document.getElementById('Aid').href="#";
+                                   }
+                                   function slide3(){
+                                        document.getElementById('id').src="./banner/baner_vazio3.jpg";
+                                        setTimeout("slide1()", 5000)
+                                        document.getElementById('Aid').href="#";
+                                   }
+                              </script>
+                              <body onLoad="slide1()">
+                                   <a id="Aid"><img id="id"></a>
+                              </body>
+                         </aside>
+                    </div>                    
                     <div class="foto-encarte">
                          <img src="./objeto/backg-cake.png" alt="Imagem de fundo do cardápio">
                     </div>
@@ -41,38 +65,38 @@
                     </div>
                </header>
                <main class="grade">
-                    <figure>
-                         <img src="./Imagens/canape.jpg" alt="">
-                         <figcaption><h2>Canapés e Bombons Sortidos</h2></figcaption>
-                    </figure>
-                    <figure>
-                         <img src="./Imagens/mousse.jpg" alt="">
-                         <figcaption><h2>Mousses&Pudins de Copo</h2></figcaption>
-                    </figure>
-                    <figure>
-                         <img src="./Imagens/bolos.jpg" alt="">
-                         <figcaption><h2>Bolos Decorados</h2></figcaption>
-                    </figure>
-                    <figure>
-                         <img src="./Imagens/cupcakes.jpg" alt="">
-                         <figcaption><h2>Cupcakes Sortidos</h2></figcaption>
-                    </figure>
-                    <figure>
-                         <img src="./Imagens/brigadeiro_gourmet.jpg" alt="">
-                         <figcaption><h2>Brigadeiros Varios Tipos</h2></figcaption>
-                    </figure>
-                    <figure>
-                         <img src="./Imagens/beijinho.jpg" alt="">
-                         <figcaption><h2>Beijinhos Sortidos</h2></figcaption>
-                    </figure>
-                    <figure>
-                         <img src="./Imagens/trufados.jpg" alt="">
-                         <figcaption><h2>Trufados Diversos</h2></figcaption>
-                    </figure>
-                    <figure>
-                         <img src="./Imagens/bicho-de-pe.jpg" alt="">
-                         <figcaption><h2>Bichos de pé</h2></figcaption>
-                    </figure>
+                    <article>
+                         <span>Visite a nossa festa dos Cupcakes</span>
+                         <p>Valores promocionais para os dias das mães...</p>
+                         <figure>
+                              <img src="./Imagens/cupcakes/cupcake-04.jpg" alt="">
+                         </figure>                         
+                    </article>
+                    <hr>
+                    <article>
+                         <span>Visite a demanda de docinhos e canapés... </span>
+                         <p>Temos bandejas para pronta entrega e individual...</p>
+                         <figure>
+                              <img src="./Imagens/bombons/canape.jpg" alt="">
+                         </figure>         
+                    </article>
+                    <hr>
+                    <article>
+                         <span>Se tem festa tem docinho no ponto!... </span>
+                         <p>Faça um oraçamento e ganhe porções de fidelidade...</p>
+                         <figure>
+                              <img src="./Imagens/docinhos/docinho-07.jpg" alt="">
+                         </figure>         
+                    </article>
+                    <hr>
+                    <article>
+                         <span>Visite a nossa doceria em potinhos!...</span>
+                         <p>Desde mousses, brigadeiros, pudins e bichos-de-pés...
+                              Fique a vontade na diversificação...</p>
+                         <figure>
+                              <img src="./Imagens/potinhos/potinho-04.jpg" alt="">
+                         </figure>         
+                    </article>
                </main>
           </div>
           <footer>
