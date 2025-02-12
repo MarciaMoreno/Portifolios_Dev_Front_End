@@ -1,199 +1,204 @@
-/********************************************************************************/
-/*****RESET CSSS*****************************************************************/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-     a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-     small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-     fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-     article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
-     menu, nav, output, ruby, section, summary, time, mark, audio, video {
-          margin: 0;
-          padding: 0;
-          border: 0;
-          font-size: 100%;
-          font: inherit;
-          vertical-align: baseline;
-     }
-
-     /* HTML5 display-role reset for older browsers */
-     article, aside, details, figcaption, figure, 
-     footer, header, hgroup, menu, nav, section {
-          display: block;
-     }
-     body { line-height: 1; }
-     ol, ul { list-style: none;}
-     blockquote, q { quotes: none; }
-     blockquote:before, blockquote:after,
-     q:before, q:after {
-          content: '';
-          content: none;
-     }
-     table { 	border-collapse: collapse; border-spacing: 0; }
-
-
-/****FONTES DO GOOGLE**************************************/
-/*********************************************************
+     /****FONTES DO GOOGLE**************************************/
+     /*********************************************************
      .quicksand-<uniquifier> {
           font-family: "Quicksand", serif;
           font-optical-sizing: auto;
           font-weight: <weight>;
           font-style: normal;
      }
-*/
-     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+     */
+          @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/****Página INDEX**************************************/
-/**********************************************************/
-     html {
-          --s: 30px; /* control the size*/
-          --c1: #e5fcc2;
-          --c2: #45ada8;
+     /***********************************************************************************/
+     /*      PÁGINA: INDEX.html - 31/01/2025 - Último Update.    */
+     /***********************************************************************************/
+         a{ text-decoration: none;}
+         ul li { list-style: none;}
+         body{
+               display: inline-flexbox;  flex-wrap: wrap ;
+               font-family: "Quicksand", serif; font-size: 1.3rem;
+               max-width: 1990px; min-width: 360px;
+               margin: 0 auto; padding: 0;
+               background-color: #DEB5D1;
+         }
+     /***********************************************************************************/
+          /*    Estilizando a imagem slogan do site...             */
+          .foto-capa{
+               box-sizing: content-box; margin: 0; justify-items: center;
+          } 
+          .foto-capa img{
+               max-width: 100%; object-fit: cover; object-position: center;
+          }  
           
-          --_s:37.5% 12.5% at 62.5%;
-          --_g:34% 99%,#0000 101%;
-          --g1:radial-gradient(var(--_s) 100%,#0000 32%,var(--c1) var(--_g));
-          --g2:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c1) var(--_g));
-          --g3:radial-gradient(var(--_s) 100%,#0000 32%,var(--c2) var(--_g));
-          --g4:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c2) var(--_g));
-          background:
-          var(--g1),
-          var(--g2) 0                calc(3*var(--s)),
-          var(--g3) var(--s)         calc(3*var(--s)),
-          var(--g4) var(--s)         calc(6*var(--s)),
-          var(--g1) calc(2*var(--s)) calc(6*var(--s)),
-          var(--g2) calc(2*var(--s)) calc(9*var(--s)),
-          var(--g3) calc(3*var(--s)) calc(9*var(--s)),
-          var(--g4) calc(3*var(--s)) 0,
-          repeating-linear-gradient(var(--c1) 0 25%,var(--c2) 0 50%);
-          background-size: calc(4*var(--s)) calc(12*var(--s));          
-     }
-     body{
-          max-width: 100%; display: flex; flex-wrap: wrap; 
-          justify-content: center; font-family: "Quicksand", serif; 
-          /*background-size: 400% 400%;
-          animation: gradiente 6s ease infinite alternate;*/
-     }
-
-     /**** Separando as divs como encartes....*/
-     .encarte1 img, .encarte2 img{  width: 100%; }
-     .encarte1 ul li, .encarte2 ul li{ 
-          display: inline; margin: 0; padding: 0;
-     }
-     .encarte1, .encarte2{
-          max-width: 45%;  min-width: 450px; margin: 2% 0% 1% 2%; height: auto;
-          flex-wrap: wrap; opacity: 0.9; 
-          background-color: #ededd7;
-          border: 2px solid #3d3838;     
+          /*    Estilo do ***BANNER*** e quebra da div  */
+          #id{ max-width: 100%; object-fit: cover; object-position: center;}
           
-          /*background-size: 400% 400%;
-          animation: gradiente 6s ease infinite alternate;*/
-     }
-     .grade article{ display: block;}
-     .grade article span{
-          font-size: large; font-size: 1.5rem; font-style: italic; padding: 3%; color: #f9eef7;     
-          background: linear-gradient(-45deg, #7d6c79 0%, #398380 50%, hsl(266, 57%, 61%) 100%);
+          /*     Estilizando o menu de navegação do header      */
+          .menu{
+              
+               background-image: url("../Imagens/loja-ok.jpg");
+               height: auto; opacity: 0.8;
+          }
+          .menu nav {
+               text-align: center;               
+          }
+          .menu nav ul li{ 
+               display: inline-block; padding: 2%; width: 250px; min-width: 300px;
+               background-color: #FFFDDB; margin: 1%; border-radius: 22%;
+               box-shadow: inset 2px 4px 18px #DEB5D1;
+          } 
+          .menu nav ul li:hover{
+               box-shadow: inset 2px 4px 18px #53A4A1; text-decoration: underline;
+          }   
+          .menu a{ 
+               font-family: Curlz MT; font-size: 2rem;
+               padding: 10px 10px 10px 10px; line-height: 1.8em;
+               color: #8b7089; font-weight: 400;
+               text-shadow: 2px 8px 32px #fff, 8px 16px 64px #fff;
+          }
+                        
+          /*   Estilizando as SECTIONS dos artigos       */       
+          .section{
+               flex-wrap: wrap; background-color: #EDEBF0;
+               display: flex; justify-content: center; margin: 5% 0% 5% 0%;
+               align-items: center; justify-items: center;
+          } 
+          .section img{
+               max-width: 300px; height: 300px;
+               object-fit: cover; object-position: center;
+               border-radius: 30%;
+               border: solid 8px #a6eeec;
+               box-shadow: 2px 8px 32px #687675;
+          }
+          .section img:hover{
+               box-shadow: inset 3px 9px 19px #DEB5D1, 9px 18px 120px #fff;
+               border: 8px solid #eacae6;
+          }
+          .artigo{
+               text-align: right; padding: 10px;
+          }
+          .artigo h2{ 
+               font-family: Curlz MT; font-size: 3rem;
+               text-shadow: 0px 2px 10px #6af4ef, 2px 24px 120px #b7fffd;}
+               
 
-     }
+          /*   Estilizando o sub menu no entorno do rodape      */
+          .menu-2{
+               margin: 0;
+               display: flex; flex-wrap: wrap; 
+               justify-content: center; 
+               text-align: center;
+               gap: 10px;
+          }
+     
+          .sub-menu{
+               width: 250px; word-break: break-word; margin-top: 5%;
+               vertical-align: middle; border: #FFFDDB 2px dashed; border-radius: 22%;
+               display: inline-block; justify-content: center; align-items: center;
+          }
+          .sub-menu img{
+               width: 80px;
+               height: 80px;
+               border-radius: 40%;
+               object-fit: cover;
+               object-position: center;
+               box-shadow: inset 3px 9px 19px #DEB5D1;
+               border: solid 8px #6af4ef;
+               box-shadow: 3px 9px 18px #6b7a7a;            
+          }
+          .sub-menu img:hover{
+               box-shadow: inset 3px 9px 19px #DEB5D1, 9px 18px 120px #fff;
+               border: 8px solid #eacae6;
+          }
+          .sub-menu h3{
+               font-weight: 700; font-family: Curlz MT;
+               font-size: 1.5rem; padding: 10px;
+               text-shadow: 0px 2px 10px #6af4ef, 2px 4px 20px #b7fffd;
+          }
+          .sub-menu-home{
+               margin-top: 5%; text-align: center;
+               border-radius: 22%;
+               display: block; justify-content: center; 
+          }
+          .sub-menu-home a{ 
+               font-weight: 800; color: #6f576b; font-size: 2rem;
+               border-radius: 22px; background-color: #eacae6;
+          }
+         .sub-menu-home a:hover{
+               color: #662651; text-shadow: 2px 4px 8px #8b7089, 4px 8px 16px #FFFDDB;
+         }
+          
+          /*    Estlizando o FOOTER           */
+         .footer{
+               justify-content: center; justify-items: center; 
+               text-align: center; padding: 5%;background-color: #EDEBF0;
+         
+          }
+         .footer h2{ font-family: Curlz MT; }
+         .footer ul li{ display: inline-block;}
+         .footer img{
+               max-width: 100px; border-radius: 22%;
+               border: solid 8px #6af4ef; background-color: #8b7089;
+         }
+         .footer img:hover{
+               border: 8px double #6f576b; background-color: #53A4A1;
+         } 
 
-     /**Estilizando HEADER*****************************/
-     .encarte1 h1{
-          font-family: "Quicksand", serif;
-          font-size: 2.1rem;
-          padding: 2%;
-          font-weight: 900;
-          color: #6f576b;
-          font-style: italic;
-          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+     /***********************************************************************************/
+     /*      PÁGINA: bolos.html - 31/01/2025 - Último Update.    */
+     /***********************************************************************************/
+          .tito{
+               text-align: center; opacity: 0.6;
+               font-family: Curlz MT; font-size: 3rem;
+               text-shadow: 0px 2px 10px #6af4ef, 2px 24px 120px #b7fffd;
+          }
+          .grade{ 
+               display: flex;  justify-content: center;  justify-items: center; 
+               flex-wrap: wrap; margin-top: 5%;
+          }
+          .grade figure{
+               margin: 2%;  text-align: center;  padding: 3%; width: 150px; border-radius: 14%;
+               border: 2px solid #ccc;  box-sizing: content-box;    
+               box-shadow: 3px 9px 18px #6b7a7a;   
+               background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
+          }
+          .grade figure figcaption h2{ 
+               border-radius: 5%; background-color: #eacae6; padding: 3%;
+               font-size: 1.2rem; border: dashed 4px #6f576b;
+          }
+          .grade figure img{
+               width: 150px;
+               height: 200px;
+               border-radius: 40%;
+               object-fit: cover;
+               object-position: center;
+               box-shadow: inset 3px 9px 19px #DEB5D1;
+          }
+          .grade figure:hover{
+               border: dashed 2px #e323c3;
+               box-shadow: 0 10px 25px #756672;
+          }
 
-     }
-     .slogan-site{ 
-          width: 100%; height: auto; margin: auto;   
-     }
-     .slogan-site img{ 
-          max-width: 100%; object-fit: fill; object-position: center;
-     }
-     .menu{ 
-          display: flex; justify-content: center; align-items: center;
-          text-align: center;
-     }
-     .menu a{
-          text-decoration: none;
-          text-align: center; padding: 10px 10px 10px 10px;line-height: 3em;
-          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
-          border: dashed 4px #e6c2e0; font-size: 1.5rem;  color: #3d3838;
-      }
-      .menu a:hover{
-          border: dashed 4px #e323c3; box-shadow: 0 10px 25px #756672;
-      }
+     /***********************************************************************************/
+     /*      PÁGINA: SOBRE-NOS.html - 31/01/2025 - Último Update.    */
+     /***********************************************************************************/
+          section .history{
+               width: 100%;  flex-wrap: wrap; justify-items: center;
+          }
+          .history img{
+               width: 400px;
+          }
+          .box-02 p {
+                text-align: justify; text-indent: 52px;
+          }
+     /***********************************************************************************/
+     /*      PÁGINA: cupcake.html - 31/01/2025 - Último Update.    */
+     /***********************************************************************************/
+     
+     /***********************************************************************************/
+     /*      PÁGINA: docinho.html - 31/01/2025 - Último Update.    */
+     /***********************************************************************************/
 
-      .foto-encarte{
-          width: 100%;
-          height: auto;
-          box-sizing: content-box;          
-      }
-      .foto-encarte img{
-          max-width: 100%;
-          object-position: center;
-      }
-
-     /**Estilizando o banner do sidebar****/
-     #id{
-          width: 100%;
-          max-height: auto;
-          align-items: center;
-          margin: auto;
-     }
-
-     /*****Estilizando o encarte 1 e 2**********/
-     .social{ display: flex; justify-content: center;}
-     .social img{
-          width: 60px;  height: 60px; border: dashed 4px #e6c2e0;
-          border-radius: 5%; box-shadow:  4px 4px 1px #443736;
-          filter: drop-shadow( 2px 4px 8px #443736);
-     }
-     .social img:hover{
-          border: dashed 4px #e323c3; border-radius: 20% 30% 5%; 
-     }
-     .encarte2 .grade{ margin-top: 165px;}
-     .grade{ 
-          display: flex;  justify-content: center;  justify-items: center; 
-          flex-wrap: wrap; margin-top: 5%;
-     }
-     .grade figure{
-          margin: 2%;  text-align: center;  padding: 3%; width: 150px; border-radius: 14%;
-          border: 2px solid #ccc;  box-sizing: content-box;      
-          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
-     }
-     .grade figure figcaption h2{ 
-          border-radius: 5%; background-color: #eacae6; padding: 3%;
-          font-size: 1.2rem; border: dashed 4px #6f576b;
-     }
-     .grade figure img{
-          width: 120px;
-          height: 150px;
-          border-radius: 40%;
-          object-fit: cover;
-          object-position: center;
-      }
-      .grade figure:hover{
-          border: dashed 2px #e323c3;
-          box-shadow: 0 10px 25px #756672;
-      }
-
-     /***FOOOTER*************************************************/
-     /***********************************************************/
-     footer{
-          width: 100%;
-          font-size: 1.5rem;
-          margin-top: 5%;
-          padding: 2% 0% 5% 0%;
-          text-align: center;
-          background: linear-gradient(-45deg, #f4cceb 0%, #b8e9e7 50%, hsl(266, 84%, 88%) 100%);
-      }
-     footer h2{
-          background-color: #f4cceb;
-          padding: 1%;
-     }
+     /***********************************************************************************/
+     /*      PÁGINA: potinhos.html - 31/01/2025 - Último Update.    */
+     /***********************************************************************************/

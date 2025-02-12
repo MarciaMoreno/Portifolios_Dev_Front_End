@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-     <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Doces Joquebede</title>
-          <link rel="stylesheet" href="css/estilo-doce.css">
-     </head>
-     <body>
-          <div class="slogan-site">
-               <img src="./objeto/tito_pagina.png" alt="Slogan da página">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Doces Joquebede</title>
+     <link rel="stylesheet" href="css/estilo-doce.css">
+</head>
+<body>
+     <header>
+          <div class="foto-capa">
+               <img src="./objeto/tito_pagina.png" alt="Slogan da Página Doces Joquebede">
           </div>
-          <div class="encarte1">
-               <header>                    
-                    <nav class="menu">
-                         <ul>
-                              <li><a href="cardapio-cupcake.html">Cardápio |</a></li>
-                              <li><a href="">Datas Comemorativas |</a></li>
-                              <li><a href="">Encomendas & Contatos |</a></li>
-                              <li><a href="">Sobre Nós</a></li>
-                         </ul>
-                    </nav>
-               </header>     
-               <main>
-                    <br><br><br>
-                    <div class="banner">
-                         <aside>
-                              <script type="text/javascript">
-                                   function slide1(){
-                                        document.getElementById('id').src="./banner/baner_vazio.jpeg";
-                                        setTimeout("slide2()", 5000)
-                                        document.getElementById('Aid').href="#";
-                                   } function slide2(){
-                                        document.getElementById('id').src="./banner/baner_vazio2.jpg";
-                                        setTimeout("slide3()", 5000)
-                                        document.getElementById('Aid').href="#";
-                                   }
-                                   function slide3(){
-                                        document.getElementById('id').src="./banner/baner_vazio3.jpg";
-                                        setTimeout("slide1()", 5000)
-                                        document.getElementById('Aid').href="#";
-                                   }
-                              </script>
-                              <body onLoad="slide1()">
-                                   <a id="Aid"><img id="id"></a>
-                              </body>
-                         </aside>
-                    </div>                    
-                    <div class="foto-encarte">
-                         <img src="./objeto/backg-cake.png" alt="Imagem de fundo do cardápio">
-                    </div>
-               </main>          
-          </div>
-          <div class="encarte2">
-               <header>
-                    <div>
-                         <img src="./objeto/back_small.png" alt="Fundo decorativo da pagina de apoio">
-                         <nav class="social">
-                              <ul>
-                                   <li><a href=""><img title="Instagram Doces Joquebede" src="./icons/instagranA.png" alt="Instagram Doces Joquebede"></a></li>
-                                   <li><a href=""><img title="TikTok Doces Joquebede" src="./icons/TikTokA.png" alt="TikTok Doces Joquebede"></a></li>
-                                   <li><a href=""><img title="Whatsapp Doces Joquebede" src="./icons/zap-zapA.png" alt="Whatsapp Doces Joquebede"></a></li>
-                              </ul>
-                         </nav>
-                    </div>
-               </header>
-               <main class="grade">
-                    <article>
-                         <span>Visite a nossa festa dos Cupcakes</span>
-                         <p>Valores promocionais para os dias das mães...</p>
-                         <figure>
-                              <img src="./Imagens/cupcakes/cupcake-04.jpg" alt="">
-                         </figure>                         
-                    </article>
-                    <hr>
-                    <article>
-                         <span>Visite a demanda de docinhos e canapés... </span>
-                         <p>Temos bandejas para pronta entrega e individual...</p>
-                         <figure>
-                              <img src="./Imagens/bombons/canape.jpg" alt="">
-                         </figure>         
-                    </article>
-                    <hr>
-                    <article>
-                         <span>Se tem festa tem docinho no ponto!... </span>
-                         <p>Faça um oraçamento e ganhe porções de fidelidade...</p>
-                         <figure>
-                              <img src="./Imagens/docinhos/docinho-07.jpg" alt="">
-                         </figure>         
-                    </article>
-                    <hr>
-                    <article>
-                         <span>Visite a nossa doceria em potinhos!...</span>
-                         <p>Desde mousses, brigadeiros, pudins e bichos-de-pés...
-                              Fique a vontade na diversificação...</p>
-                         <figure>
-                              <img src="./Imagens/potinhos/potinho-04.jpg" alt="">
-                         </figure>         
-                    </article>
-               </main>
-          </div>
-          <footer>
-               <h2>Doces JOQUEBEDE- Nazaré do Piauí &copy; - 2025 </h2>
-               <h3>mapat.soad@gmail.com - +55 (11) 93148-4584</h3>
-          </footer>
-     </body>
+          <div class="menu">
+               <nav>
+                    <ul>
+                         <li><a href="index.html">HOME</a></li>
+                         <li><a href="sobre-nos.html">Sobre nós...</a></li>
+                         <li><a href="materia-prima.html">Marcas Parceiras</a></li>
+                         <li><a href="cupcake.html">CARDÁPIO</a></li>                       
+                    </ul>
+               </nav>
+          </div>         
+     </header>
+     <main>
+          <section class="section">
+               <article class="artigo"> 
+                    <h2>Cupcakes</h2>
+                    <span>Visite a nossa festa dos Cupcakes</span>
+                    <p>Valores promocionais para os dias das mães...</p>
+                    <p><a href="cupcake.html">Clique aqui...&raquo;</a></p>
+               </article>
+               <figure>
+                    <a href="cupcake.html"><img src="./Imagens/cupcakes/cupcake-04.jpg" alt="Capa do menu de cupcakes"></a>  
+               </figure>
+          </section>
+          <section class="section">
+               <article class="artigo">
+                    <h2>Bombons e Canapés</h2>
+                    <span>Visite a demanda de bomboms e canapés... </span>
+                    <p>Temos bandejas para pronta entrega e individual...</p>
+                    <p><a href="bombons-canapes.html">Clique aqui...&raquo;</a></p>
+               </article>
+               <figure>
+                    <a href="bombons-canapes.html"><img src="./Imagens/bombons/canape.jpg" alt="Capa do menu de bombons"></a>
+               </figure>
+          </section>
+          <section class="section">
+               <article class="artigo">
+                    <h2>Bandeijão de Doces</h2>
+                    <span>Se tem festa tem docinho no ponto!... </span>
+                    <p>Faça um oraçamento e ganhe porções de fidelidade...</p>
+                    <p><a href="docinhos.html">Clique aqui...&raquo;</a></p>
+               </article>
+               <figure>
+                    <a href="docinhos.html"><img src="./Imagens/docinhos/docinho-07.jpg" alt="Capa do menu de docinhos"></a>
+               </figure>
+          </section>
+          <section class="section">
+               <article class="artigo">
+                    <h2>Doces no Pote</h2>
+                    <span>Visite a nossa doceria em potinhos!...</span>
+                    <p>Desde mousses, brigadeiros, pudins e bichos-de-pés...
+                    <br>Fique a vontade na diversificação...</p>
+                    <p><a href="potinhos.html">Clique aqui...&raquo;</a></p>
+               </article>
+               <figure>
+                    <a href="potinhos.html"><img src="./Imagens/potinhos/potinho-04.jpg" alt="Capa do menu de Doces em potes"></a>
+               </figure>
+          </section>
+     </main> 
+     <br><br>
+     <div>
+          <aside>
+               <script type="text/javascript">
+                    function slide1(){
+                         document.getElementById('id').src="./banner/baner_vazio.jpeg";
+                         setTimeout("slide2()", 5000)
+                         document.getElementById('Aid').href="#";
+                    } function slide2(){
+                         document.getElementById('id').src="./banner/baner_vazio2.jpg";
+                         setTimeout("slide3()", 5000)
+                         document.getElementById('Aid').href="#";
+                    }
+                    function slide3(){
+                         document.getElementById('id').src="./banner/baner_vazio3.jpg";
+                         setTimeout("slide1()", 5000)
+                         document.getElementById('Aid').href="#";
+                    }
+               </script>
+               <body onLoad="slide1()">
+                    <a id="Aid"><img id="id"></a>
+               </body>
+          </aside>
+     </div>
+     <div class="sub-menu-home">
+          <a href="index.html"><h3>&raquo; HOME</h3></a>
+     </div>           
+     <footer class="footer">
+          <h2>DOCES Joquebede &copy; - 2025 - Nazaré do Piauí</h2>
+          <nav>
+               <ul>
+                    <li><a href="#"><img title="Instagram Doces Joquebede" src="./icons/instagranA.png" alt="Instagram Doces Joquebede"></a></li>
+                    <li><a href="#"><img title="TikTok Doces Joquebede" src="./icons/TikTokA.png" alt="TikTok Doces Joquebede"></a></li>
+                    <li><a href="#"><img title="Whatsapp Doces Joquebede" src="./icons/zap-zapA.png" alt="Whatsapp Doces Joquebede"></a></li>
+               </ul>
+          </nav>
+          <p>**Portfolio não comercial - Não compre - Demonstrativo html Compartilhável.*** <br> (11) 93148-4584 - mapat.soad@gmail.com</p>
+     </footer>
+</body>
 </html>
