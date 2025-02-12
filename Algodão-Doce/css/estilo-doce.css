@@ -63,6 +63,10 @@
                display: flex; justify-content: center; margin: 5% 0% 5% 0%;
                align-items: center; justify-items: center;
           } 
+          .section p{
+               max-width: 100%; text-indent: 52px;
+               word-break: break-all; word-wrap: break-word; box-sizing: content-box;
+          }
           .section img{
                max-width: 300px; height: 300px;
                object-fit: cover; object-position: center;
@@ -75,6 +79,7 @@
                border: 8px solid #eacae6;
           }
           .artigo{
+               width: 600px;
                text-align: right; padding: 10px;
           }
           .artigo h2{ 
@@ -182,14 +187,8 @@
      /***********************************************************************************/
      /*      PÁGINA: SOBRE-NOS.html - 31/01/2025 - Último Update.    */
      /***********************************************************************************/
-          section .history{
-               width: 100%;  flex-wrap: wrap; justify-items: center;
-          }
-          .history img{
-               width: 400px;
-          }
-          .box-02 p {
-                text-align: justify; text-indent: 52px;
+          .history{
+               display: flex;
           }
      /***********************************************************************************/
      /*      PÁGINA: cupcake.html - 31/01/2025 - Último Update.    */
