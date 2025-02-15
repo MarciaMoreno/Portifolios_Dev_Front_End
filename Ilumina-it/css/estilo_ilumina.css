@@ -1,211 +1,202 @@
+     @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+     /**.lavishly-yours-regular {
+          font-family: "Lavishly Yours", serif;
+          font-weight: 400;
+          font-style: normal; } */
 
-/****http://www.ilumina-it.com.br  ***REVISÃO = 17/05/2019 sexta-feira 23h19min***
-	Formato CSS: estilo_ilumina - PÁGINA: index.html - Nazaré do Piauí / 24/01/2025*/
-		
-	/****FONTES DO GOOGLE***********/
-	@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-	/*
+     @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+     /**.poiret-one-regular {
+          font-family: "Poiret One", serif;
+          font-weight: 400;
+          font-style: normal; } ***/
 
-	/*FORMATANDO O BODY************/
-	body{ background-color: black; font-family: "Ubuntu", serif; color:#fcfbf6; }
-	a {text-decoration: none;}
-	ul li{ text-decoration: none; list-style: none;}
-	header{ flex-wrap: wrap;}
-	.logo-site strong{		
-		font-family: "Great Vibes", serif;
-		font-weight: 400;
-		font-style: italic;
-		font-size: 10rem;
-	}
-	.logo-site h1 { font-size: 5rem; text-align: center; text-shadow: 0 0 10px #e6d996, 0 0 40px #fcfbf6, 0 0 80px #f3df8e;}
-	.logo-site{
-		color: #f3df8e;
-		width: 100%;
-		justify-items: center;
-		align-content: center;
-		font-size: 2rem;
-		background-image: url("../Objetos/teste2.jpg");	
-		background-repeat: repeat-x;
-		background-position: bottom;
-		background-size: fill;
-		margin: auto;
-	}
-	.menu{  margin: auto; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; }
-	.menu ul li{ display: inline-block; }
-	.menu input{
-		font-size: 1rem;
-		color: #f3df8e;
-		width: 250px;
-		padding: 4%;
-		border-bottom-width: 12px;
-		border-bottom-color: #f3df8e;
-		background-color: transparent;
-		box-shadow: inset 3px 9px 19px rgba(255, 215, 0,0.5) ;
-		border-radius: 22%;
-		margin: 2%;
-	}
-	.linha-anuncio{
-		flex-wrap: wrap;
-		height: 300px;
-		width: 95%;
-		box-shadow: groove 3px 9px 19px rgba(255, 215, 0,0.5) ;
-		border: groove 2px #f3df8e;
-		margin: auto;
-	}
-	
-	.menu input:hover{ background-color: #f3df8e; color: #000;}
-	.social{ margin: auto; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; } 
-	.social ul li{ display: inline-block; }
-	.social img{ width: 70px; }	 
-	.social img:hover{  box-shadow: 0 2px 12px 4px #f3df8e;	}
-	section{
-		display: flex; margin: 5%;
-		border: 1px inset black;
-	}
-	section:hover{ border: 1px inset #f3df8e ; box-shadow: 2px 14px 24px #f3df8e;}
-	.title-index h3{ color: #f3df8e; font-family: "Ubuntu", serif; font-weight: 300; font-style: normal; }
-	.title-index{
-		text-align: center;
-		width: 100%;
-		justify-items: center;
-		align-content: center;
-		font-size: 2rem;
-		background-image: url("../Objetos/teste2.jpg");	
-		background-repeat: repeat-x;
-		background-position: bottom;
-		padding: 5%;
-		background-size: fill;
-		margin-left: 2%;
-		
-	}
-	#box-img{ 
-		width: 200px; 
-		height: 100%; 
-		object-fit: fill; 
-		object-position: bottom;
-		border: groove 4px #f3df8e;
-	}
-	.box-img{
-		max-width: 200px;
-		height: 250px;
-		box-sizing: content-box;
-	}
-	main article{
-		padding: 0% 20% 0% 20%;
-		font-size: 1.2rem;
-		text-align: justify;
-		font-weight: 200;
-	}
-	footer h2{
-		flex-wrap: wrap;
-		color: #f3df8e;
-		font-weight: 100;
-		text-align: center;
-		padding: 5%;
-	}
+     @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Poiret+One&display=swap');
+     /**.monsieur-la-doulaise-regular {
+          font-family: "Monsieur La Doulaise", serif;
+          font-weight: 400;
+          font-style: normal; } */
+    
+     
 
-	.main-contato{
-		font-weight: 200;
-		flex-wrap: wrap;
-		width: 100%;
-		margin: auto;
-		display: flex;
-		justify-content: center;
-	}
 
-	.parte-01, .parte-02{
-		padding: 5%;
-		max-width: 50%;
-		
-	}
-	.parte-01 input{
-		font-size: 1rem;
-		color: #f3df8e;
-		width: 250px;
-		padding: 4%;
-		border-bottom-width: 12px;
-		border-bottom-color: #f3df8e;
-		background-color: transparent;
-		box-shadow: 3px 9px 19px rgba(255, 215, 0,0.5) ;
-		border-radius: 22%;
-		margin: 2%;
-	}
-	.parte-01 textarea{
-		font-size: 1rem;
-		color: #f3df8e;
-		width: 250px;
-		padding: 4%;
-		border-bottom-width: 12px;
-		border-bottom-color: #f3df8e;
-		background-color: transparent;
-		box-shadow: 3px 9px 19px rgba(255, 215, 0,0.5) ;
-		border-radius: 12%;
-		margin: 2%;
-	}
-	.parte-01 button{
-		font-size: 1rem;
-		color: #f3df8e;
-		width: 100px;
-		padding: 4%;
-		border-bottom-width: 12px;
-		border-bottom-color: #f3df8e;
-		background-color: transparent;
-		box-shadow: 3px 9px 19px rgba(255, 215, 0,0.5) ;
-		border-radius: 12%;
-		margin: 3%;
-	}
-	h1,h2,h3{ color: #f3df8e;}
-	.main-contato span{
-		font-weight: 600;
-		padding: 5%;
-		font-family: "Great Vibes", serif;
-		font-size: 2.2rem;
-		text-align: center;
-		justify-items: center;
-		color: #f3df8e;
-	}
-	#box-mensagem{
-		max-width: 80%;
-		height: 200px;
-	}
-	.grade{
-		display: flex;
-		justify-content: center;
-		justify-items: center;
-		flex-wrap: wrap;
-		
-	}
-	.grade figure{
-		max-width: 250px;
-		height:310px;
-		border: groove 1px #f3df8e;
-		justify-items: center;
-	}
-	.grade figure:hover{
-		box-shadow: 3px 9px 119px rgba(255, 215, 0,0.5) ;
-	}
-	.grade img{ width: 100%; height: 100%; margin: auto; object-fit: cover; }
-	
-	.grade figcaption{
-		text-align: center;
-		flex-wrap: wrap;
-		color: #f3df8e;
-		font-weight: 200;
-		white-space: pre-wrap;
-	}
+/**************************************************************************************
+***** PÁGINA: INDEX.html *************************************************************
+**************************************************************************************/
 
-	.titulo{
-		text-align: center;
-		color: #0c0c0b;
-		width: 100%;
-		font-size: 2rem;
-		background-image: url("../Objetos/teste2.jpg");	
-		background-repeat: repeat-x;
-		background-position: bottom;
-		background-size: fill;
-		margin: auto;
-		justify-items: end;
-		padding: 2%;
-		text-shadow: 0 0 10px #fcfbf6, 0 0 20px #fcfbf6, 0 0 30px #f3df8e;
-	}
+     /***      Formatando os item do BODY            */
+     a { text-decoration: none;} 
+     ul li { list-style: none; padding: 0; margin: 0; display: inline;}
+     body{
+          max-width: 1990px;
+          margin: 0 auto;
+          padding: 0;
+          flex-wrap: wrap;
+          min-width: 360px;
+          background-color: rgb(22, 22, 22);
+     }
+
+     /***HEADER***********************************/
+     /***      Formatando o SLOGAN DO SITE - Header         */    
+     .nome-site{  
+          color: #FBD36F; font-size: 2rem;
+          background-image: url("../Objetos/teste2.jpg");
+          background-clip: content-box;
+          background-size: 50% 100%;
+          
+     }
+     .nome-site h1{ word-break: keep-all; text-shadow: 2px 8px 16px #262525; }
+     .efeito1{
+          font-family: "Monsieur La Doulaise", serif; font-size: 14rem; color: #FDEA93;
+          font-weight: 200; text-shadow: 2px 8px 56px #FDEA93, 4px 16px 32px #fff;
+     }
+     .efeito2{
+           font-weight: 500; font-family: "Lavishly Yours", serif; font-size: 5rem;          
+     }
+
+     /***      Formatando o menu - Header         */       
+     .menu{
+          background: linear-gradient(-45deg, #FBD36F 0%,#E5E1BD 25%, #FBD36F 50%, #AA8830 100%);
+          padding: 10px; animation: gradiente 6s ease infinite alternate;
+          background-size: 200% 200%; 
+     }
+     .menu input, .menu button{ background-color: #262525; color: #FBD36F; padding: 12px; 
+          font-size: 1.5rem; font-family: "Poiret One", serif; border: dashed 4px #262525;
+          font-weight: 700; margin: 2px;
+      }
+     .menu input:hover, .menu button:hover{
+          background-color: #FDEA93; color: #262525; border: inset 4px #262525;
+     }
+     .menu, .social, .especial{
+          display: block; justify-items: center; min-width: 360px; text-align: center ;
+     }
+     .especial input{
+          background: linear-gradient(-45deg, #FBD36F 0%,#E5E1BD 25%, #FBD36F 50%, #AA8830 100%);
+          border-radius: 22%; font-family: "Lavishly Yours", serif; font-size: 50px;
+          margin-bottom: 15%; box-shadow: 2px 18px 32px #FDEA93; border: inset 1px #262525;
+          
+     }
+     .especial input:hover{
+          box-shadow: 2px 18px 32px #FDEA93, 8px 24px 32px #FBD36F;
+          border: solid 1px #262525; font-weight: 700;
+     }
+
+     /***      Formatando o menu de midias sociais do header          */
+     .social a img{
+          width: 100px; object-fit: cover; object-position: center;
+          border: 4px solid #262525; border-radius: 12%;
+     }
+     .social img:hover{
+          border: inset 4px #FDEA93;
+     }
+     /*** MAIN ***************************************/
+     
+     .linha-anuncio{
+          height: 300px; max-width: 98%; border: groove 2px #f3df8e; margin: auto;
+          background: linear-gradient(-45eg, #FBD36F 0%,#E5E1BD 25%, #FBD36F 50%, #E5E1BD 75% #AA8830 100%);
+          flex-wrap: wrap; height: 300px; box-shadow: 12px 18px 22px #FDEA93;
+          border: solid 1px #FBD36F;
+          }
+     main{
+          display: flex; justify-content: center; flex-wrap: wrap;
+          justify-items: center; align-items: center;
+          text-align: center;
+     }
+     .box-img{
+          background: linear-gradient(-45eg, #FBD36F 0%,#E5E1BD 25%, #FBD36F 50%, #E5E1BD 75% #AA8830 100%);
+          width: 600px; margin: 2%; border-radius: 50%;
+          box-shadow: 2px 18px 32px #FDEA93; border: solid 1px #262525;          
+          
+     }
+     @keyframes gradiente {
+          0%{
+               background-position: 0% 50%;
+          }
+          50%{
+               background-position: 100% 50%;
+               background-repeat: repeat-x;
+          }
+          100%{
+               background-position: 0% 50%;
+          }
+     }
+
+     #box-img{
+          width: 350px; height: 350px; border-radius: 22%; 
+          object-fit: cover; object-position: center; padding: 5%;          
+     }
+     .box-title{
+          background: linear-gradient(-45deg, #FBD36F 0%,#E5E1BD 25%, #FBD36F 50%, #AA8830 100%);
+          padding: 2% 0% 2% 0%; word-break: break-all; background-size: 200%;
+          border: 2px inset #FDEA93; animation: gradiente 6s ease infinite alternate;
+     }
+     .box-title:hover{
+          text-decoration: underline; text-shadow: 2px 4px 8px #262525;
+          border: 2px dashed #AA8830;
+     }
+     .box-img a{ color: #262525; font-family: "Poiret One", serif;
+          font-weight: 400; font-size: 1.6rem;
+     }
+     /*** FOOTER  ***************************************/
+    
+     footer{
+          font-family: "Poiret One", serif; 
+          display: flex; justify-content: center; text-align: center;
+          color: #262525; background: linear-gradient(-45deg, #FBD36F 0%,#E5E1BD 25%, #FBD36F 50%, #AA8830 100%);
+          padding: 2% 0% 2% 0%; word-break: break-all; background-size: 200%;
+          border: 2px inset #FDEA93; animation: gradiente 6s ease infinite alternate;
+          margin-bottom: 5%; 
+     }    
+    
+
+
+/**************************************************************************************
+***** PÁGINA: BIOGRAFIA_ILUMINA.html *************************************************************
+**************************************************************************************/
+     .grade article{
+          font-family: "Poiret One", serif; 
+          font-size: 1.5rem;
+     }
+
+     .grade article p{
+          margin: 6%; padding: 15px;
+          background-color: #262525; 
+     }
+
+/**************************************************************************************
+***** PÁGINA: CONTATOS.html *************************************************************
+**************************************************************************************/
+     .formulario{ width: 350px; font-family: "Poiret One", serif; line-height: 32px; margin: 2%;}
+     .formulario input{
+          width: 350px; height: 30px; margin: 2px; border: inset 4px #FDEA93; 
+          border-radius: 22px; font-size: 1.2rem;
+     }
+     .formulario label{ font-size: 1.5rem; margin: 1.2rem; background-color: #262525; padding: 10px;}
+     .formulario textarea{
+          width: 300px; height: 300px; font-size: 1.2rem; border-radius: 22%; padding: 20px;
+     }
+/**************************************************************************************
+***** PÁGINA: LOJA ONLINE *************************************************************
+**************************************************************************************/
+
+     .grade{
+          display: flex; justify-content: center; align-items: center;
+          min-width: 360px; color: #FDEA93; flex-wrap: wrap;
+          background: linear-gradient(-45deg, #262525 0%,#FDEA93 25%, #262525 50%, #FDEA93 100%);
+          background-size: 400%;
+          animation: gradiente 9s ease infinite alternate;
+     }
+     .grade img{
+          width: 300px; height: 300px;  border: dotted 10px #f3df8e;
+          border-radius: 22%;
+     }
+     .grade img:hover{
+          border: solid 10px #262525;
+     }
+     .grade figcaption h2{
+          font-family: "Poiret One", serif; 
+     }
+     .titulo{
+          font-weight: 500; font-family: "Lavishly Yours", serif; font-size: 5rem;          
+          color: #FDEA93; box-shadow: 2px 18px 32px #FDEA93; border: inset 1px #f3df8e;
+          padding: 2% 12% 2% 12%; text-align: center;
+     }

@@ -3,7 +3,12 @@
 >Site com foco de negocio para comercial de peças e luminárias 
 típicamente artesanais. 
 
-![..](./Imagens/captura01.png)/![..](./Imagens/captura2.png)
-![..](./Imagens/captura3.png)/![..](./Imagens/captura4.png)
-![..](./Imagens/captura5.png)/![..](./Imagens/captura6.png) 
-![..](./Imagens/captura7.png)
+## Print Home PC E MOBILE
+![..](./prints/Home-pc.jpeg)![..](./prints/Home-mobile.jpeg)
+
+## Print Contatos PC E MOBILE
+![..](./prints/Contato-pc.jpeg)![..](./prints/Contato-mobile.jpeg)
+
+## Print Loja Online PC E MOBILE
+![..](./prints/Loja-pc.jpeg)![..](./prints/Loja-mobile.jpeg)
+
