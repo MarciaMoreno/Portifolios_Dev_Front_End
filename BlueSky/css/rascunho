@@ -1,0 +1,57 @@
+
+	
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<HTML xmlns="http://www.w3.org/1999/xhtml">
+		<HEAD>
+			<META CHARSET="utf-8" />
+			<META http-equiv="Content-type" content="text/html" />
+			<META NAME="keywords" CONTENT="Ciencia, Biologia" />
+			<META NAME="description" CONTENT=" " />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<TITLE>Blue Sky (Research TEAM)</TITLE>
+			<LINK REL="stylesheet" TYPE="text/css" HREF="Estilo-Blue.css" />
+			<LINK REL="stylesheet" TYPE="text/css" HREF="divgrid.css" />
+			<LINK REL="Stylesheet" HREF="css/Estilo-Blue.css" />
+			<LINK REL="Stylesheet" HREF="css/divgrid.css" />
+		</HEAD>		
+		<BODY>			
+			<header>														
+				
+				
+			</header>
+			<SECTION>
+				<div class="linha">					
+                    <div class="login col10">
+                        <form method="POST" action="cadastro.php">
+                            <label for="inputEmail" class="sr-only">Login</label><input id="box" type="text" name="login" id="login"><br><br>
+                            <label>Senha</label><input id="box" type="password" name="senha" id="senha"><br><br>
+                            <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <div class="text_center text_danger">
+                        <?php if(isset($_SESSION['loginErro'])){
+                            echo $_SESSION['loginErro'];
+                            unset($_SESSION['loginErro']);
+                        }?>
+                    </div>
+                </div>
+			</SECTION>
+			<br><br>
+			<footer>
+				<div class="linha">
+					<p>Copyright &copy; 2024/2026 - Blue Sky (Science & Tecnology)</b></p>
+				</div>
+			</footer>	
+			<br>
+		</BODY>
+	</HTML>
