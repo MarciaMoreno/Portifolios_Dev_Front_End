@@ -1,22 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-/****BlueSky - Reasearch Team ***REVISÃO = 15/02/2024***
 	
-	.cinzel.tito{
+	.quicksand{
+		font-family: "Quicksand", serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	}
+	.cinzel{
 		font-family: "Cinzel", serif;
 		font-optical-sizing: auto;
 		font-weight: weight 400;
 		font-style: bold;
 	}
 
+/****BlueSky - Reasearch Team ***REVISÃO = 15/02/2024***/
 /*********************************************************************************************/
 /****Formato CSS: Estilo_Blue.css - INDEX.html - Nazaré do Piauí / PI */
 	
-	/*** Formatando BODY ***/
+	/*** Formatando BODY  6A819E  ***/
+	
 	body{
 		background-color: rgb(196, 209, 225);
 		max-width: 1990px;
-		min-width: 360px;
+		min-width: 300px;
 		margin: 0 auto;
-		padding: 0;		
+		padding: 0;	
+		flex-wrap: wrap;
+		justify-content: center;
 	}
+	a{ text-decoration: none;}
+	ul li{ list-style: none;}
+	p{ text-indent: 52px; padding: 3%;}
+	h1,h2,h3,h4 { color: #F8F5EC; text-shadow: 2px 2px 14px #A3ABB0;}
+	
+	/*** Formatando O HEADER ***/
+/************* midias sociais *************************/
+	.social{ display: flex; justify-content: end; }
+	.social ul li { display: inline;  }
+	.social img{
+		width: 60px; margin: 5px; 
+		border-radius: 22%;
+	}
+	.social img:hover{ 
 		
+	}
+/************* logo do Site *************************/
+	.logotipo{
+		display: flex; justify-content: center; text-align: center;
+	}
+	.logotipo h1{ 
+		font-size: 6rem; font-family: "Quicksand", serif; 
+		padding: 5px; border-radius: 30%;
+	}
+	.letra{
+		border-radius: 45%; box-shadow: inset 2px 4px 18px #87A3C8, 8px 16px 32px #87A3C8;
+		font-size: 12rem; width: 180px; padding: 3px; font-family: "Cinzel", serif; 
+	}
+	.subtitulo{
+		display: flex; justify-content: center; text-align: center; 
+		word-spacing: 20px; text-transform: uppercase; padding: 15px;
+		background-color: #747871; color: #F8F5EC; font-size: 3rem;
+		font-optical-sizing: auto; font-weight: weight 400; font-style: bold; 
+		text-shadow: 2px 8px 32px #050505, 4px 16px 64px #050505;
+		letter-spacing: 6px;
+	
+	}
+/************* menu de navegação *************************/
+	.menu{
+		display: flex; justify-content: center; flex-wrap: wrap; ;
+		min-width: 360px; max-width: 100%; text-align: center;	} 
+	.menu ul li{ display: inline;	}
+	.menu input{
+		background: #DCDEE0;align-items: center;
+		padding: 15px 50px; font-size: 22px;
+		border-radius: 22%; box-shadow: inset 2px 4px 18px #87A3C8, 8px 16px 32px #747871;
+		font-family: "Quicksand", serif; border-color: transparent;
+	}
+	.menu input:hover{
+		background: #fff; 
+	}
+
+/************* wrap da section main *************************/
+	.wrap{
+		width: 100%;
+		height: 800px;
+		background-image: url("../Imagens/copia-lake.jpeg");
+		background-repeat: no-repeat; 
+		background-size: cover;		
+	}
+	.sub-form{
+		display: flex; justify-content: end; padding: 20px;
+		border: groove 4px #F8F5EC;
+	}
+	.sub-form button{
+		padding: 10px 30px; font-size: 1.2rem; margin: 2px;font-weight: 200;
+		background-color: #3B423C; color: #F8F5EC; 
+	}
+	.sub-form button:hover{
+		background-color: #c9ba75; color: #3B423C;
+	}
+
+	.wrap form{ margin: 5%; 	}
+	.wrap form input{
+		width: 400px; height: 42px; font-size: 1.3rem; padding: 2px;
+		border-color: transparent; border-radius: 32%; text-align: center;
+		box-shadow: inset 2px 4px 18px #87A3C8, 8px 16px 32px #747871;
+	}
+	.wrap label{
+		font-weight: 800; color: #F8F5EC; font-size: 1.2rem;
+		font-family: "Quicksand", serif; margin: 2px;
+	}
+	.forms{ position: relative; top: 10px; left: 150px;}
+	.forms button{
+		background: #DCDEE0;align-items: center;
+		padding: 10px 20px; font-size: 22px;
+		border-radius: 22%; box-shadow: inset 2px 4px 18px #87A3C8, 8px 16px 32px #747871;
+		font-family: "Quicksand", serif; border-color: transparent;
+	}
+	.forms button:hover{
+		background: #fff; 
+	}
+
+	/************* footer  *************************/
+	footer{
+		display: flex; justify-content: center; text-align: center;
+	}
+	footer h2{
+		display: flex; justify-content: center; text-align: center; padding: 15px;
+		background-color: #6A819E; color: #F8F5EC; width: 100%;
+		text-shadow: 2px 8px 32px #050505, 4px 16px 64px #050505;
+		font-family: "Cinzel", serif; font-optical-sizing: auto;
+		font-weight: weight 400; 
+	}
+

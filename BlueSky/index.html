@@ -18,17 +18,19 @@
 		<header>
 			<div class="social">
 				<nav>						
-					<ul>								
-						<li><a href="#"><img id="social" src="Objeto/Whats.png" alt="Whatsapp"></a></li>
-						<li><a href="#"><img id="social" src="Objeto/twitter.png" alt="Tweeter"></a></li>
-						<li><a href="#"><img id="social" src="Objeto/vp-face.png" alt="Facebook"></a></li>
-					</ul>						
+					<ul>
+						<li><a href="#"><img src="./icons/facebook.png" alt="Facebook BlueSky"></a></li>
+						<li><a href="#"><img src="./icons/linkedin.png" alt="Linkedin BlueSky"></a></li>
+						<li><a href="#"><img src="./icons/zap-zap.png" alt="Whatsapp BlueSky"></a></li>
+						<li><a href="#"><img src="./icons/youtube.png" alt="Canal Youtube BlueSky"></a></li>
+						<li><a href="#"><img src="./icons/snap.png" alt="Snapchat BlueSky"></a></li>
+					</ul>			
 				</nav>
 			</div>
 			<div class="logotipo">						
-				<h1 id="logotipo"><B id="letra">B</B>lue <B id="letra">S</B>ky</h1>							
+				<h1><span class="letra">B</span>lue <span class="letra">S</span>ky</h1>							
 			</div>
-			<div class="tito">				
+			<div class="subtitulo">				
 				<span>Science and Technology Research Team</span>			
 			</div>
 			<div class="menu">
@@ -44,21 +46,20 @@
 				</nav>
 			</div>			
 		</header>
-		<main>
-			<section class="wrap">						
+		<main class="wrap">
+			<section>	
+				<fieldset class="sub-form">
+					<button type="submit">CADASTRO</button>
+					<button type="submit">Reset de Senha</button>
+				</fieldset>					
 				<form method="post" action="cadastro.php">
-					<label for="inputEmail" class="questao">Login</label><input type="text" name="login" id="login"><br><br>
-					<label class="questao">Senha</label><input type="password" name="senha" id="login"><br><br>
-					<div>
+					<label for="inputEmail" class="questao">Login: </label><input type="text" name="login" placeholder="Digite seu Usuário"><br><br>
+					<label class="questao">Senha: </label><input type="password" name="senha" placeholder="*************"><br><br>
+					<div class="forms">
 						<button type="submit">Login</button>
 						<button type="reset">Limpar</button>
 					</div>
-				</form>
-				<div class="sub-form">
-					<button type="submit">CADASTRO</button>
-					<button type="submit">Reset de Senha</button>
-				</div>
-							
+				</form>							
 			</section>
 		</main>		
 		<footer>
